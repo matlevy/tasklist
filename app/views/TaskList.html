@@ -1,0 +1,12 @@
+<div class="panel panel-primary" ng-show="tasks.length>0">
+	<div class="panel-heading">{{ label }}'s ToDo</div>
+	<ul class="list-group {{ label.toLowerCase() }}" ng-show="tasks.length>0">
+		<task-item ng-repeat="task in tasks | isTaskComplete | filter:taskFilter" task="task"></task-item>
+	</ul>
+</div>
+<div class="panel panel-success" ng-show="tasks.length>0">
+	<div class="panel-heading">{{ label }}'s Done</div>
+	<ul class="list-group">
+		<task-item ng-repeat="task in tasks | isTaskIncomplete | filter:taskFilter" task="task"></task-item>
+	</ul>
+</div>

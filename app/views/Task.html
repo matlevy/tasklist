@@ -1,0 +1,6 @@
+<li class="list-group-item">
+	<button ng-click="markDone()" ng-show="task.getIsComplete()==false" class="glyphicon glyphicon-ok btn btn-success"></button>
+	<button ng-click="markNotDone()" ng-show="task.getIsComplete()==true" class="glyphicon glyphicon-remove btn btn-danger"></button>
+	<button ng-click="removeTask()" class="glyphicon glyphicon-trash btn btn-default"></button>
+	{{ task.name }}
+</li>

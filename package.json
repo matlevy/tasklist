@@ -1,0 +1,17 @@
+{
+  "name": "taskr",
+  "version": "1.0.0",
+  "description": "Task / ToDo management application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Matthew Levy",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "express": "^4.13.4",
+    "jasmine-node": "^1.14.5",
+    "requirejs": "^2.2.0"
+  }
+}

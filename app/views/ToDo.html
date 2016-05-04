@@ -1,0 +1,7 @@
+<navigation></navigation>
+<task-adder can-set-date="true"></task-adder>
+<div>
+	<task-list label="Today" tasks="taskList.getAllTasks()" task-filter="taskList.filters.isForToday"></task-list>
+	<task-list label="Tommorow" tasks="taskList.getAllTasks()" task-filter="taskList.filters.isForTommorow"></task-list>
+	<task-list label="Someday When You Feel Like" tasks="taskList.getAllTasks()" task-filter="taskList.filters.isForFuture"></task-list>
+</div>
